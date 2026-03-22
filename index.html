@@ -14,31 +14,34 @@ body {
     text-align:center;
 }
 
+/* HEADER */
 .header {
     padding:50px 20px;
     background:linear-gradient(#001a33,#000);
 }
 
-h1 {
+/* LOGO */
+.logo {
+    font-size:50px;
     color:#00d4ff;
-    font-size:45px;
-    letter-spacing:3px;
+    letter-spacing:5px;
+    text-shadow:0 0 15px #00d4ff;
 }
 
+/* FRASE */
 .sub {
-    margin-top:15px;
-    font-size:16px;
+    margin-top:20px;
+    font-size:20px;
+    color:#fff;
+    font-weight:bold;
 }
 
-.container {
-    padding:20px;
-}
-
+/* BOTÕES */
 .btn {
     display:block;
     margin:20px auto;
     padding:20px;
-    max-width:400px;
+    max-width:420px;
     border-radius:15px;
     font-weight:bold;
     text-decoration:none;
@@ -60,16 +63,59 @@ h1 {
     transform:scale(1.05);
 }
 
-/* resto */
-.section {
+/* TEXTO OBJETIVO */
+.objetivo {
+    font-size:20px;
     margin-top:30px;
+    font-weight:bold;
 }
 
-.box {
-    background:#111;
+/* TABELA ESTILO */
+.tabela {
+    margin-top:30px;
     padding:20px;
     border-radius:12px;
+    background:linear-gradient(90deg,#001a33,#000,#001a33);
+}
+
+.tabela h2 {
+    color:#00d4ff;
+    margin-bottom:15px;
+}
+
+.linha {
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #333;
+    padding:10px 0;
+    font-weight:bold;
+}
+
+/* REGRAS */
+.regras {
+    margin-top:25px;
+    background:#111;
+    padding:20px;
+    border-radius:10px;
+    text-align:left;
+    line-height:1.6;
+}
+
+/* SOBRE */
+.sobre-btn {
     margin-top:20px;
+    color:#00d4ff;
+    cursor:pointer;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.sobre-texto {
+    display:none;
+    margin-top:10px;
+    background:#111;
+    padding:15px;
+    border-radius:10px;
 }
 
 </style>
@@ -78,53 +124,74 @@ h1 {
 <body>
 
 <div class="header">
-    <h1>BLURAX</h1>
+    <div class="logo">BLURAX</div>
     <div class="sub">ENVIE A SUA IDEIA E NÓS PRODUZIMOS E ENVIAMOS PARA VOCÊ</div>
 </div>
 
 <div class="container">
 
-<!-- BOTÃO 1 -->
+<!-- BOTÕES -->
 <a href="https://www.canva.com" target="_blank" class="btn btn-blue">
-🎨 CRIAR MEU DESIGN
+✏️ CRIAR MEU DESIGN
 </a>
 
-<!-- BOTÃO 2 -->
 <a href="https://wa.me/554797884064?text=Olá,%20quero%20enviar%20meu%20design%20para%20a%20BLURAX" target="_blank" class="btn btn-green">
 📩 ENVIAR MEU DESIGN
 </a>
 
 <!-- OBJETIVO -->
-<div class="section">
-<b>O OBJETIVO DA BLURAX É CRIAR PEÇAS ÚNICAS QUE ENCANTEM NOSSOS CLIENTES</b>
+<div class="objetivo">
+O OBJETIVO DA BLURAX É CRIAR PEÇAS ÚNICAS QUE ENCANTEM NOSSOS CLIENTES
 </div>
 
 <!-- TABELA -->
-<div class="box">
-<p><b>TABELA DE PREÇOS</b></p>
-<p>Camisas (P M G) — R$150-250</p>
-<p>Camisa GG — R$250-350</p>
-<p>Premium (P M G) — R$350-400</p>
-<p>Premium GG — R$400-550</p>
-<p>Moletom (P M G) — R$500-600</p>
-<p>Moletom GG — R$600-700</p>
+<div class="tabela">
+    <h2>TABELA</h2>
+
+    <div class="linha">
+        <span>CAMISA P M G GG</span>
+        <span>R$240 - 350</span>
+    </div>
+
+    <div class="linha">
+        <span>CAMISA PREMIUM P M G GG</span>
+        <span>R$350 - 499</span>
+    </div>
+
+    <div class="linha">
+        <span>MOLETOM P M G GG</span>
+        <span>R$499 - 700</span>
+    </div>
+
+    <div class="linha">
+        <span>MOLETOM PREMIUM P M G GG</span>
+        <span>R$699 - 800</span>
+    </div>
 </div>
 
 <!-- REGRAS -->
-<div class="box">
-1️⃣ TROCAS APENAS EM DEFEITOS <br>
-2️⃣ PRAZO DE 15-20 DIAS <br>
-3️⃣ NÃO ACEITAMOS CONTEÚDOS IMPRÓPRIOS <br>
-4️⃣ FRETE R$100-200 (10% OFF)
+<div class="regras">
+TROCAS APENAS EM DEFEITOS <br>
+PRAZO DE 15-20 DIAS <br>
+NÃO ACEITAMOS CONTEÚDOS IMPRÓPRIOS <br>
+FRETE DE R$100-200 COM 10% DE DESCONTO
 </div>
 
 <!-- SOBRE -->
-<div class="box">
-<b>SOBRE</b><br><br>
-A BLURAX foi criada com o objetivo de permitir que clientes criem seus próprios designs ou enviem ideias. Trabalhamos com qualquer peça e buscamos sempre peças únicas.
+<div class="sobre-btn" onclick="toggleSobre()">SOBRE</div>
+
+<div id="sobre" class="sobre-texto">
+A BLURAX foi criada com o objetivo de permitir que clientes criem seus próprios designs ou enviem ideias de personalização. Trabalhamos com qualquer peça de roupa e tecidos, sempre buscando entregar peças únicas.
 </div>
 
 </div>
+
+<script>
+function toggleSobre(){
+    let s = document.getElementById("sobre");
+    s.style.display = s.style.display === "block" ? "none" : "block";
+}
+</script>
 
 </body>
 </html>

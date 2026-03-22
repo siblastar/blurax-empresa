@@ -3,80 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLURAX - Official</title>
+    <title>BLURAX - Oficial</title>
     <style>
         body { 
             font-family: 'Arial Black', sans-serif; 
             text-align: center; 
             background-color: #000; 
             color: #fff; 
-            margin: 0; 
-            padding: 0;
+            margin: 0; padding: 0;
         }
 
-        /* Topo com Degradê Azul inspirado na sua imagem */
+        /* Topo com Degradê Azul Suave */
         .header-section {
-            background: linear-gradient(180deg, #001f3f 0%, #000000 100%);
-            padding: 50px 20px;
-            border-bottom: 2px solid #007bff;
+            background: linear-gradient(180deg, #001a33 0%, #000000 100%);
+            padding: 40px 20px;
+            border-bottom: 1px solid #007bff;
         }
 
         h1 { 
-            font-size: 55px; 
+            font-size: 45px; 
             margin: 0; 
             color: #00d4ff; 
             text-transform: uppercase;
-            letter-spacing: 5px;
-            text-shadow: 2px 2px 10px rgba(0, 212, 255, 0.5);
+            letter-spacing: 3px;
         }
 
-        /* Explicação com Letras Grandes como pedido */
+        /* Texto abaixo do nome com LETRAS GRANDES */
         .sub-header { 
-            font-size: 24px; 
+            font-size: 20px; 
             color: #ffffff; 
             margin: 20px auto; 
             font-weight: bold;
             max-width: 90%;
-            line-height: 1.2;
+            line-height: 1.3;
+            text-transform: uppercase;
         }
 
         .container { max-width: 500px; margin: auto; padding: 20px; }
 
-        /* Botões Verde Claro Fosco (Sem muito brilho) */
+        /* Botões Verde Claro Fosco (Sem Brilho) */
         .btn-verde { 
             display: block; 
-            background-color: #90EE90; /* Verde claro mais suave */
+            background-color: #90EE90; /* Verde claro suave */
             color: #000; 
-            padding: 22px; 
+            padding: 20px; 
             margin: 15px 0; 
             text-decoration: none; 
             font-weight: 900; 
-            border-radius: 12px; 
-            font-size: 19px; 
+            border-radius: 10px; 
+            font-size: 18px; 
             text-transform: uppercase;
-            border: 2px solid #000;
         }
 
-        /* Tabela Amarela Organizada e Clara */
-        .tabela-container { margin: 30px 0; background: #ffff00; color: #000; border-radius: 15px; padding: 15px; box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3); }
-        table { width: 100%; border-collapse: collapse; font-weight: bold; }
-        th { border-bottom: 2px solid #000; padding: 10px; font-size: 18px; text-transform: uppercase; }
-        td { padding: 12px 5px; border-bottom: 1px solid rgba(0,0,0,0.1); text-align: left; font-size: 15px; }
-        .preco { text-align: right; color: #d40000; } /* Preço em destaque */
+        /* Tabela Amarela Mais Clara e Organizada */
+        .tabela-container { 
+            margin: 30px 0; 
+            background: #ffff00; 
+            color: #000; 
+            border-radius: 10px; 
+            padding: 10px;
+        }
+        table { width: 100%; border-collapse: collapse; }
+        th { border-bottom: 2px solid #000; padding: 10px; font-size: 16px; }
+        td { padding: 12px 8px; border-bottom: 1px solid rgba(0,0,0,0.1); text-align: left; font-size: 14px; font-weight: bold; }
+        .preco { text-align: right; color: #000; }
 
-        .objetivo { color: #00d4ff; font-style: italic; margin: 30px 0; font-size: 18px; font-weight: bold; }
+        .objetivo { color: #00d4ff; font-style: italic; margin: 25px 0; font-size: 16px; font-weight: bold; }
         
         .regras { 
             text-align: left; 
-            font-size: 15px; 
+            font-size: 14px; 
             background: #111; 
-            padding: 20px; 
+            padding: 15px; 
             border-radius: 10px; 
-            border: 1px solid #00d4ff;
+            border: 1px solid #333;
             line-height: 1.6;
         }
         
-        .btn-sobre { background: none; color: #555; border: 1px solid #333; padding: 10px; margin-top: 30px; border-radius: 5px; cursor: pointer; width: 100%; }
+        .btn-sobre { background: none; color: #444; border: 1px solid #222; padding: 10px; margin-top: 20px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 12px; }
     </style>
 </head>
 <body>
@@ -87,8 +91,10 @@
 </div>
 
 <div class="container">
-    <a href="https://wa.me criar meu design!" class="btn-verde">CRIAR MEU DESIGN</a>
-    <a href="https://wa.me uma ideia (Meu Design) para enviar." class="btn-verde">MEU DESIGN</a>
+    <!-- Botões agora configurados para abrir seu WhatsApp diretamente -->
+    <a href="https://wa.me! Acabei de ver o site e quero CRIAR MEU DESIGN. Como faço para te enviar o desenho?" class="btn-verde">CRIAR MEU DESIGN</a>
+    
+    <a href="https://wa.me! Tenho uma ideia (MEU DESIGN) e quero te explicar como eu quero a minha peça." class="btn-verde">MEU DESIGN</a>
     
     <p class="objetivo">O OBJETIVO DA BLURAX É CRIAR PEÇAS ÚNICAS QUE ENCANTEM NOSSOS CLIENTES</p>
 
@@ -98,8 +104,8 @@
             <tbody>
                 <tr><td>Camisas (P M G)</td><td class="preco">R$150-250</td></tr>
                 <tr><td>Camisa (GG)</td><td class="preco">R$250-350</td></tr>
-                <tr><td>Premium (P M G)</td><td class="preco">R$350-400</td></tr>
-                <tr><td>Premium (GG)</td><td class="preco">R$400-550</td></tr>
+                <tr><td>P M G (Qualidade)</td><td class="preco">R$350-400</td></tr>
+                <tr><td>GG (Qualidade)</td><td class="preco">R$400-550</td></tr>
                 <tr><td>Moletom (P M G)</td><td class="preco">R$500-600</td></tr>
                 <tr><td>Moletom (GG)</td><td class="preco">R$600-700</td></tr>
             </tbody>
@@ -110,11 +116,11 @@
         <strong>REGRAS:</strong><br>
         1️⃣ TROCAS APENAS EM DEFEITOS<br>
         2️⃣ PRAZO DE 15-20 DIAS<br>
-        3️⃣ SEM CONTEÚDOS IMPRÓPRIOS<br>
+        3️⃣ NÃO ACEITAMOS CONTEÚDOS IMPRÓPRIOS<br>
         4️⃣ FRETE R$100-200 (10% OFF)
     </div>
 
-    <button class="btn-sobre" onclick="alert('A Blurax transforma suas ideias em peças exclusivas com tecidos de alta qualidade.')">SOBRE A EMPRESA</button>
+    <button class="btn-sobre" onclick="alert('A Blurax foi criada para você ter a liberdade de criar seu próprio estilo. Personalizamos qualquer peça de roupa!')">SOBRE A EMPRESA</button>
 </div>
 
 </body>

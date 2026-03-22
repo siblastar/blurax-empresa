@@ -3,47 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLURAX - Oficial</title>
+    <title>BLURAX - Official</title>
     <style>
-        body { font-family: 'Arial Black', sans-serif; text-align: center; background-color: #000; color: #fff; padding: 20px; margin: 0; }
-        .container { max-width: 500px; margin: auto; border: 3px solid #00fbff; padding: 25px; border-radius: 20px; background: #0a0a0a; box-shadow: 0 0 20px #00fbff55; }
-        
-        h1 { color: #00fbff; text-shadow: 0 0 15px #00fbff; font-size: 35px; margin-bottom: 5px; }
-        .sub { color: #aaa; font-size: 13px; margin-bottom: 25px; font-weight: bold; }
+        body { 
+            font-family: 'Arial Black', sans-serif; 
+            text-align: center; 
+            background-color: #000; 
+            color: #fff; 
+            margin: 0; 
+            padding: 0;
+        }
 
-        /* Botões Verde Neon */
-        .btn-verde { display: block; background: #39FF14; color: #000; padding: 20px; margin: 15px 0; text-decoration: none; font-weight: 900; border-radius: 12px; font-size: 18px; text-transform: uppercase; box-shadow: 0 0 15px #39FF14; transition: 0.3s; }
-        
-        /* Tabela Amarela */
-        table { width: 100%; background: #ffff00; color: #000; margin: 25px 0; border-collapse: collapse; border-radius: 10px; overflow: hidden; font-weight: bold; }
-        th, td { border: 1px solid #000; padding: 12px; text-align: left; }
-        th { background: #e6e200; }
+        /* Topo com Degradê Azul inspirado na sua imagem */
+        .header-section {
+            background: linear-gradient(180deg, #001f3f 0%, #000000 100%);
+            padding: 50px 20px;
+            border-bottom: 2px solid #007bff;
+        }
 
-        .objetivo { color: #00fbff; font-style: italic; margin: 20px 0; font-size: 15px; }
-        .regras { text-align: left; font-size: 14px; border-left: 4px solid #00fbff; padding-left: 15px; background: #111; padding: 10px; border-radius: 5px; }
+        h1 { 
+            font-size: 55px; 
+            margin: 0; 
+            color: #00d4ff; 
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 10px rgba(0, 212, 255, 0.5);
+        }
+
+        /* Explicação com Letras Grandes como pedido */
+        .sub-header { 
+            font-size: 24px; 
+            color: #ffffff; 
+            margin: 20px auto; 
+            font-weight: bold;
+            max-width: 90%;
+            line-height: 1.2;
+        }
+
+        .container { max-width: 500px; margin: auto; padding: 20px; }
+
+        /* Botões Verde Claro Fosco (Sem muito brilho) */
+        .btn-verde { 
+            display: block; 
+            background-color: #90EE90; /* Verde claro mais suave */
+            color: #000; 
+            padding: 22px; 
+            margin: 15px 0; 
+            text-decoration: none; 
+            font-weight: 900; 
+            border-radius: 12px; 
+            font-size: 19px; 
+            text-transform: uppercase;
+            border: 2px solid #000;
+        }
+
+        /* Tabela Amarela Organizada e Clara */
+        .tabela-container { margin: 30px 0; background: #ffff00; color: #000; border-radius: 15px; padding: 15px; box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3); }
+        table { width: 100%; border-collapse: collapse; font-weight: bold; }
+        th { border-bottom: 2px solid #000; padding: 10px; font-size: 18px; text-transform: uppercase; }
+        td { padding: 12px 5px; border-bottom: 1px solid rgba(0,0,0,0.1); text-align: left; font-size: 15px; }
+        .preco { text-align: right; color: #d40000; } /* Preço em destaque */
+
+        .objetivo { color: #00d4ff; font-style: italic; margin: 30px 0; font-size: 18px; font-weight: bold; }
         
-        .btn-sobre { background: transparent; color: #00fbff; border: 1px solid #00fbff; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-top: 25px; font-weight: bold; }
+        .regras { 
+            text-align: left; 
+            font-size: 15px; 
+            background: #111; 
+            padding: 20px; 
+            border-radius: 10px; 
+            border: 1px solid #00d4ff;
+            line-height: 1.6;
+        }
+        
+        .btn-sobre { background: none; color: #555; border: 1px solid #333; padding: 10px; margin-top: 30px; border-radius: 5px; cursor: pointer; width: 100%; }
     </style>
 </head>
 <body>
-<div class="container">
+
+<div class="header-section">
     <h1>BLURAX</h1>
-    <p class="sub">ENVIE A SUA IDEIA E NÓS PRODUZIMOS E ENVIAMOS PARA VOCÊ</p>
-    
-    <a href="https://wa.me! Quero CRIAR MEU DESIGN agora." class="btn-verde">CRIAR MEU DESIGN</a>
-    <a href="https://wa.me! Tenho uma ideia (MEU DESIGN) para enviar." class="btn-verde">MEU DESIGN</a>
+    <p class="sub-header">ENVIE A SUA IDEIA E NÓS PRODUZIMOS E ENVIAMOS PARA VOCÊ</p>
+</div>
+
+<div class="container">
+    <a href="https://wa.me criar meu design!" class="btn-verde">CRIAR MEU DESIGN</a>
+    <a href="https://wa.me uma ideia (Meu Design) para enviar." class="btn-verde">MEU DESIGN</a>
     
     <p class="objetivo">O OBJETIVO DA BLURAX É CRIAR PEÇAS ÚNICAS QUE ENCANTEM NOSSOS CLIENTES</p>
 
-    <table>
-        <tr><th>PRODUTO</th><th>VALOR</th></tr>
-        <tr><td>Camisas P M G</td><td>R$150-250</td></tr>
-        <tr><td>Camisa GG</td><td>R$250-350</td></tr>
-        <tr><td>Qualidade P M G</td><td>R$350-400</td></tr>
-        <tr><td>Qualidade GG</td><td>R$400-550</td></tr>
-        <tr><td>Moletom P M G</td><td>R$500-600</td></tr>
-        <tr><td>Moletom GG</td><td>R$600-700</td></tr>
-    </table>
+    <div class="tabela-container">
+        <table>
+            <thead><tr><th colspan="2">TABELA DE PREÇOS</th></tr></thead>
+            <tbody>
+                <tr><td>Camisas (P M G)</td><td class="preco">R$150-250</td></tr>
+                <tr><td>Camisa (GG)</td><td class="preco">R$250-350</td></tr>
+                <tr><td>Premium (P M G)</td><td class="preco">R$350-400</td></tr>
+                <tr><td>Premium (GG)</td><td class="preco">R$400-550</td></tr>
+                <tr><td>Moletom (P M G)</td><td class="preco">R$500-600</td></tr>
+                <tr><td>Moletom (GG)</td><td class="preco">R$600-700</td></tr>
+            </tbody>
+        </table>
+    </div>
 
     <div class="regras">
         <strong>REGRAS:</strong><br>
@@ -53,7 +114,8 @@
         4️⃣ FRETE R$100-200 (10% OFF)
     </div>
 
-    <button class="btn-sobre" onclick="alert('A Blurax foi criada para fazer os clientes terem a oportunidade de desenhar seus designs ou mandar ideias de personalizações. Trabalhamos com qualquer peça de roupa e tecidos.')">SOBRE</button>
+    <button class="btn-sobre" onclick="alert('A Blurax transforma suas ideias em peças exclusivas com tecidos de alta qualidade.')">SOBRE A EMPRESA</button>
 </div>
+
 </body>
 </html>
